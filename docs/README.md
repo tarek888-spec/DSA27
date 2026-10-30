@@ -15,12 +15,16 @@ Faculty of Computers and Information Sciences, Mansoura University — Fall 2026
 | **[Coverage Matrix](course/02-coverage.md)** | Every topic the لائحة declares, and where this repository implements it. |
 | **[Lecture 01 — Why This Course, and Why Python](lectures/01-why-this-course/lecture.md)** | The opening lecture, in full. |
 | **[Lecture 02 — Complexity, and the Array](lectures/02-complexity-and-arrays/lecture.md)** | Big-O, measuring, the course `Array`, and the no-`list` storage rule. |
+| **[Array Lab](https://helghareeb.github.io/DSA27/lectures/02-complexity-and-arrays/array-lab.html)** | Interactive (Lectures 02 and 04): step through inserting, removing, reversing and rotating in an array, watch every shift, and see a dynamic array double and copy. Offline copy: [`array-lab.html`](lectures/02-complexity-and-arrays/array-lab.html). |
 | **[Lecture 03 — Recursion](lectures/03-recursion/lecture.md)** | The call stack, recurrences, recursion trees, and branching recursion. |
 | **[Recursion Lab](https://helghareeb.github.io/DSA27/lectures/03-recursion/recursion-lab.html)** | Interactive: step through recursion, watch the call stack and the recursion tree, answer *what happens next?*, and see nine ways recursion goes wrong. Offline copy: [`recursion-lab.html`](lectures/03-recursion/recursion-lab.html). |
 | **[Lecture 04 — Dynamic Arrays](lectures/04-dynamic-arrays/lecture.md)** | Growing by copying, why doubling works, and amortised analysis. |
 | **[Lecture 05 — Linked Lists](lectures/05-linked-lists/lecture.md)** | Nodes and references, the traversal loop, and the mirror image of the array. |
+| **[Linked List Lab](https://helghareeb.github.io/DSA27/lectures/05-linked-lists/linked-list-lab.html)** | Interactive: step through singly and doubly linked lists — insert at the front, middle and end, delete, find, reverse — watch every reference and link change, and see eight ways it goes wrong. Offline copy: [`linked-list-lab.html`](lectures/05-linked-lists/linked-list-lab.html). |
 | **[Lecture 06 — Stacks](lectures/06-stacks/lecture.md)** | LIFO, two honest implementations, brackets, postfix and shunting-yard. |
+| **[Stack Lab](https://helghareeb.github.io/DSA27/lectures/06-stacks/stack-lab.html)** | Interactive: step through push, pop and a resize, balanced brackets, postfix evaluation and shunting-yard, watch every stack grow and shrink, and see nine ways it goes wrong. Offline copy: [`stack-lab.html`](lectures/06-stacks/stack-lab.html). |
 | **[Lecture 07 — Queues](lectures/07-queues/lecture.md)** | FIFO, the O(n) dequeue measured, the ring buffer, and a queue from two stacks. |
+| **[Queue Lab](https://helghareeb.github.io/DSA27/lectures/07-queues/queue-lab.html)** | Interactive: step through the slow queue, the ring buffer (drawn as a ring), growing a ring, the linked queue and a queue from two stacks, watch head and tail wrap, and see ten ways it goes wrong. Offline copy: [`queue-lab.html`](lectures/07-queues/queue-lab.html). |
 | **[Lecture 08 — Searching](lectures/08-searching/lecture.md)** | Linear and binary search, bounds, jump, exponential and interpolation search — measured. |
 | **[Lecture 09 — Basic Sorting](lectures/09-sorting-basic/lecture.md)** | Bubble, selection and insertion sort as generators you can animate; counting sort and the n log n lower bound. |
 | **[Lecture 10 — Advanced Sorting](lectures/10-sorting-advanced/lecture.md)** | Merge sort, quicksort and its pivots, heap sort — and the worst case measured. |
@@ -30,11 +34,15 @@ Faculty of Computers and Information Sciences, Mansoura University — Fall 2026
 | **[Lecture 14 — Graphs and Graph Searches](lectures/14-graphs/lecture.md)** | Adjacency list against matrix, BFS and DFS, components, cycles, topological sort. |
 | **[Lecture 15 — The Principles of Language Translation](lectures/15-language-translation/lecture.md)** | Tokens, grammar, recursive descent and the syntax tree — the capstone. |
 | **[The students' book](pdf/DSA27-Book.pdf)** | All fifteen lectures and the question bank with its answers, in one printable PDF. |
-| **[Question bank](question-bank/)** | Practice for the final (30 marks MCQ + 30 marks written): every question type, worked answers, and three mock exams. |
+| **[Online quizzes, by lecture](https://helghareeb.github.io/en/quizzes/)** | Multiple choice with every answer explained, and written practice with marking points, for every lecture: [1](https://helghareeb.github.io/en/quizzes/dsa27/week-01/) · [2](https://helghareeb.github.io/en/quizzes/dsa27/week-02/) · [3](https://helghareeb.github.io/en/quizzes/dsa27/week-03/) · [4](https://helghareeb.github.io/en/quizzes/dsa27/week-04/) · [5](https://helghareeb.github.io/en/quizzes/dsa27/week-05/) · [6](https://helghareeb.github.io/en/quizzes/dsa27/week-06/) · [7](https://helghareeb.github.io/en/quizzes/dsa27/week-07/) · [8](https://helghareeb.github.io/en/quizzes/dsa27/week-08/) · [9](https://helghareeb.github.io/en/quizzes/dsa27/week-09/) · [10](https://helghareeb.github.io/en/quizzes/dsa27/week-10/) · [11](https://helghareeb.github.io/en/quizzes/dsa27/week-11/) · [12](https://helghareeb.github.io/en/quizzes/dsa27/week-12/) · [13](https://helghareeb.github.io/en/quizzes/dsa27/week-13/) · [14](https://helghareeb.github.io/en/quizzes/dsa27/week-14/) · [15](https://helghareeb.github.io/en/quizzes/dsa27/week-15/). |
+| **[Midterm exam simulator](https://helghareeb.github.io/en/quizzes/dsa27/midterm/)** | Timed papers from Lectures 1–7, a new paper every time: [full midterm](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#paper=full) · [exam format](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#paper=format) · [half paper](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#paper=half) · [sprint](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#paper=sprint) · [explain-level challenge](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#paper=why) · [my weak spots](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#paper=weak) · [my mistakes](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#paper=wrongs) · [in Arabic](https://helghareeb.github.io/ar/quizzes/dsa27/midterm/). One lecture: [Lecture 1](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=1) · [Lecture 2](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=2) · [Lecture 3](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=3) · [Lecture 4](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=4) · [Lecture 5](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=5) · [Lecture 6](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=6) · [Lecture 7](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=7). |
+| **[Question bank](question-bank/)** | Practice for the final (30 marks MCQ + 30 marks written): every question type, worked answers, and four mock exams. |
 | **[Worked solutions](../solutions/)** | Every exercise, lab and practice problem solved — read them only after you have tried. |
 | **[Lab manual — weeks 1–15](labs/)** | Python for this course in weeks 1–3, then one lab per week building that week's structure in `dsa/`. Everything you need is in the repository. |
 | **[Your program's regulations](course/regulations/)** | The bylaws, and what they say about this course. |
-| **[Links](links.md)** | WhatsApp channel, YouTube, repository. |
+| **[Online quizzes](https://helghareeb.github.io/en/quizzes/)** | The weekly multiple-choice questions as interactive quizzes on the course website. |
+| [Recorded lectures, 2019/2020](https://helghareeb.github.io/en/videos/dsa20/) | Earlier recordings of this course, to watch or download. |
+| **[Links](links.md)** | WhatsApp channel, YouTube, course website, repository. |
 
 ## Printable PDFs
 
@@ -108,6 +116,7 @@ Faculty of Computers and Information Sciences, Mansoura University — Fall 2026
 | Question bank — week 15 | [questions](pdf/DSA27-QB-Week15-Questions.pdf) · [answers](pdf/DSA27-QB-Week15-Answers.pdf) |
 | Mock exam — weeks 1–3 | [`DSA27-QB-Mock-Exam-Weeks01-03.pdf`](pdf/DSA27-QB-Mock-Exam-Weeks01-03.pdf) |
 | Mock exam — weeks 1–7 (midterm practice) | [`DSA27-QB-Mock-Exam-Weeks01-07.pdf`](pdf/DSA27-QB-Mock-Exam-Weeks01-07.pdf) |
+| Mock exam B — weeks 1–7 (midterm practice, self-contained) | [`DSA27-QB-Mock-Exam-B-Weeks01-07.pdf`](pdf/DSA27-QB-Mock-Exam-B-Weeks01-07.pdf) · [answers](pdf/DSA27-QB-Mock-Exam-B-Weeks01-07-Answers.pdf) |
 | Mock exam — weeks 1–15 (final practice) | [`DSA27-QB-Mock-Exam-Weeks01-15.pdf`](pdf/DSA27-QB-Mock-Exam-Weeks01-15.pdf) |
 | DSA in your program | [`DSA27-DSA-In-Your-Program.pdf`](pdf/DSA27-DSA-In-Your-Program.pdf) |
 | **Official bylaws** | [`course/regulations/`](course/regulations/) |
@@ -166,7 +175,10 @@ docs/
 │   ├── README.md                   exam format, question types, how to use it
 │   ├── weekNN-questions.md         one pair per week
 │   ├── weekNN-answers.md
-│   └── mock-exam-weeks01-03.md     30 marks MCQ + 30 marks written
+│   ├── mock-exam-weeks01-03.md     30 marks MCQ + 30 marks written
+│   ├── mock-exam-weeks01-07.md     midterm practice
+│   ├── mock-exam-b-weeks01-07.md   midterm practice, printed in full (+ -answers.md)
+│   └── mock-exam-weeks01-15.md     final practice
 ├── labs/
 │   ├── README.md                   the lab manual: how labs run
 │   ├── lab01-python-basics.md      week 1

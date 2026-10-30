@@ -16,7 +16,11 @@ lang: en
 > you choose between the two structures of Weeks 4 and 5.
 >
 > Slides: `DSA27-L06-slides.pdf` · Code: `dsa/stack.py` ·
-> Tests: `tests/test_stack_queue.py` (the stack half)
+> Tests: `tests/test_stack_queue.py` (the stack half) ·
+> Interactive demo: [Stack Lab](https://helghareeb.github.io/DSA27/lectures/06-stacks/stack-lab.html) ·
+> Practise online: [Week 6 quiz and written practice](https://helghareeb.github.io/en/quizzes/dsa27/week-06/) (in [Arabic](https://helghareeb.github.io/ar/quizzes/dsa27/week-06/)) ·
+> [timed Lecture 6 test](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=6) ·
+> [midterm simulator](https://helghareeb.github.io/en/quizzes/dsa27/midterm/)
 
 :::
 
@@ -347,6 +351,55 @@ action clears the redo stack.
 
 :::
 
+## Watch it run: the Stack Lab
+
+[**Stack Lab**](https://helghareeb.github.io/DSA27/lectures/06-stacks/stack-lab.html) — open it in any browser.
+
+- The code, the variables and the **stack as a pile**, one step at a time
+- Push, pop, peek, and a push that **resizes** the `DynamicArray` underneath
+- Balanced brackets, postfix evaluation, **shunting-yard**, the whole calculator
+- `nested_sum` with your own stack, and undo/redo with two
+- *What happens next?* — answer before you step
+- Nine scenarios that **go wrong**: top at index 0, a missing bracket check,
+  operands swapped, `>` instead of `>=`…
+
+::: {.handout-only}
+
+The Stack Lab is the demo used in the lecture. It runs every algorithm in this
+handout, step by step: the line that runs, every variable, and each stack drawn
+as a pile with its top up. For the applications it also shows the input with a
+cursor on the current token, and the output as it grows. Counters keep the
+pushes, pops and shifts, so the top-at-index-0 design shows its cost.
+
+- **Online:** <https://helghareeb.github.io/DSA27/lectures/06-stacks/stack-lab.html>
+- **Offline:** open `docs/lectures/06-stacks/stack-lab.html` from your copy of
+  the repository. It is a single file and needs no installation.
+
+How to use it:
+
+- Pick a scenario at the top. Change the values, the text or the tokens in the
+  `>>>` line and press **Run**.
+- **Step** (→) moves one step and **Back** (←) undoes it. **Skip loop** (O)
+  runs the rest of a loop in one step; **Step out** (U) finishes the current
+  call. **Play** (P) runs on its own.
+- At the key moments the demo stops with a question. Answer it (A–D) **before**
+  you look; that is where the learning happens.
+
+What to try, in order: push with a resize and the amortised scenario, then the
+linked stack and the top-at-index-0 stack side by side; the three unbalanced
+inputs `([)]`, `(a))` and `((a)`, each next to the broken version that lets it
+through; `8 3 - 2 -` next to the swapped-operand version; `8 - 3 - 2` through
+shunting-yard next to the `>` version; then the calculator, `nested_sum` and
+undo/redo. For each broken scenario, find the bug in the code **before** you
+step.
+
+The stack, bracket and shunting-yard scenarios show code that solves this
+week's exercises, and the postfix ones solve `evaluate_postfix` from Week 15.
+Write your own version first. The linked stack and the editor were written for
+the demo; there is no exercise for them.
+
+:::
+
 # This Week
 
 ## Exercises: `dsa/stack.py`
@@ -395,6 +448,26 @@ once.
 
 For item 3, `pytest tests/test_translation.py -v -k evaluate_postfix` runs just the
 postfix tests; the rest of that file belongs to Week 15.
+
+:::
+
+## Practise online
+
+- [**Week 6 quiz**](https://helghareeb.github.io/en/quizzes/dsa27/week-06/): 40 multiple-choice questions, every answer explained
+- **Written practice** on the same page: 9 questions. Write, then mark yourself against the marking points
+- [**Lecture 6 test**](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=6): 20 questions, 25 minutes, timed
+- [**Midterm simulator**](https://helghareeb.github.io/en/quizzes/dsa27/midterm/): Lectures 1–7, papers of up to 60 questions
+- In Arabic: [week 6](https://helghareeb.github.io/ar/quizzes/dsa27/week-06/) · [midterm](https://helghareeb.github.io/ar/quizzes/dsa27/midterm/)
+
+::: {.handout-only}
+
+Everything runs in the browser and keeps your results on your own device.
+Do the quiz **after** the homework, as a check, not instead of it: it
+shows you which ideas did not stick, and the explanation of each answer
+sends you back to the right part of this handout.
+
+- Quiz and written practice: <https://helghareeb.github.io/en/quizzes/dsa27/week-06/>
+- Timed test on this lecture: <https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=6>
 
 :::
 

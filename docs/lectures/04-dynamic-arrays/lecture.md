@@ -15,7 +15,11 @@ lang: en
 > and meet the idea that makes it work: **amortised** cost.
 >
 > Slides: `DSA27-L04-slides.pdf` · Code: `dsa/dynamic_array.py` ·
-> Tests: `tests/test_dynamic_array.py`
+> Tests: `tests/test_dynamic_array.py` ·
+> Interactive demo: [Array Lab](https://helghareeb.github.io/DSA27/lectures/02-complexity-and-arrays/array-lab.html) ·
+> Practise online: [Week 4 quiz and written practice](https://helghareeb.github.io/en/quizzes/dsa27/week-04/) (in [Arabic](https://helghareeb.github.io/ar/quizzes/dsa27/week-04/)) ·
+> [timed Lecture 4 test](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=4) ·
+> [midterm simulator](https://helghareeb.github.io/en/quizzes/dsa27/midterm/)
 
 :::
 
@@ -263,6 +267,47 @@ and one per copied element. Most appends cost 1. Append number 2, 3, 5, 9, 17,
 
 The expensive appends are far apart, and they get further apart exactly as fast
 as they get more expensive. That balance is the whole trick.
+
+:::
+
+## Watch it run: the Array Lab, again
+
+[**Array Lab**](https://helghareeb.github.io/DSA27/lectures/02-complexity-and-arrays/array-lab.html) — the *Dynamic array* scenarios.
+
+- `append` from empty: watch the block **double** and every element copied
+- A bar per append and the running average — the last slide's chart, built live
+- `insert_at` on a full block, `pop()` against `pop(0)`, `da[-1]`
+- **Goes wrong:** `_resize` that forgets to copy, or forgets to switch;
+  growing by **one** slot (120 copies for 16 appends)
+
+::: {.handout-only}
+
+The same demo as in Lecture 02, now with `DynamicArray`. During a resize it
+draws the old block and the new one together, animates each copy across, and
+then lets the old block go — step 3 of *allocate, copy, switch*, with nothing
+referring to it any more.
+
+- **Online:** <https://helghareeb.github.io/DSA27/lectures/02-complexity-and-arrays/array-lab.html>
+- **Offline:** open `docs/lectures/02-complexity-and-arrays/array-lab.html`
+  from your copy of the repository.
+
+How to use it:
+
+- Pick a scenario at the top. Change the inputs in the `>>>` line and press
+  **Run**.
+- **Step** (→) moves one step and **Back** (←) undoes it. **Step over** (O)
+  runs a whole call (an `append`, a `_resize`, a reversal) in one step;
+  **Step out** (U) finishes the current call. **Play** (P) runs on its own.
+- At the key moments the demo stops with a question. Answer it (A–D) **before**
+  you look; that is where the learning happens.
+
+What to try, in order: appends with doubling (when do the resizes happen?),
+the same with `growth` set to 3, then *growing by one slot* — count the copies
+against doubling — and the two broken `_resize` scenarios. For each broken one,
+find the bug in the code **before** you step.
+
+The scenarios show code that solves this week's exercise in
+`dsa/dynamic_array.py`. Write your own version first.
 
 :::
 
@@ -534,6 +579,26 @@ items to it. Keep both classes in a scratch file or the notebook, not in
 
 For item 3, follow the aggregate proof: where do the resizes happen, how much
 does each one copy, and what does the geometric series sum to?
+
+:::
+
+## Practise online
+
+- [**Week 4 quiz**](https://helghareeb.github.io/en/quizzes/dsa27/week-04/): 40 multiple-choice questions, every answer explained
+- **Written practice** on the same page: 9 questions. Write, then mark yourself against the marking points
+- [**Lecture 4 test**](https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=4): 20 questions, 25 minutes, timed
+- [**Midterm simulator**](https://helghareeb.github.io/en/quizzes/dsa27/midterm/): Lectures 1–7, papers of up to 60 questions
+- In Arabic: [week 4](https://helghareeb.github.io/ar/quizzes/dsa27/week-04/) · [midterm](https://helghareeb.github.io/ar/quizzes/dsa27/midterm/)
+
+::: {.handout-only}
+
+Everything runs in the browser and keeps your results on your own device.
+Do the quiz **after** the homework, as a check, not instead of it: it
+shows you which ideas did not stick, and the explanation of each answer
+sends you back to the right part of this handout.
+
+- Quiz and written practice: <https://helghareeb.github.io/en/quizzes/dsa27/week-04/>
+- Timed test on this lecture: <https://helghareeb.github.io/en/quizzes/dsa27/midterm/#lecture=4>
 
 :::
 
